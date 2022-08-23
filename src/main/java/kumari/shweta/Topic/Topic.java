@@ -10,7 +10,6 @@ import javax.persistence.Id;
  * @author Shweta kumari
  *
  */
-
 @Entity
 public class Topic {
 	@Id
@@ -18,6 +17,9 @@ public class Topic {
 	private String name;
 	private String description;
 	
+	Topic() {
+		
+	}
 	public Topic(String id, String name, String description) {
 		super();
 		this.id = id;
